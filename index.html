@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3U8 Video Player</title>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+</head>
+<body>
+  <video-js id="my-video" class="video-js vjs-default-skin" controls autoplay width="640" height="360">
+    <source src="http://38.121.75.106:8081/live/5mtals7ev19oc8q7dr2p0tv3d/playlist.m3u8" type="application/x-mpegURL">
+  </video-js>
+
+  <script>
+    var player = videojs('my-video');
+  </script>
+</body>
+</html>
